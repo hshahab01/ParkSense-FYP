@@ -1,0 +1,56 @@
+.image-slider-container {
+  padding: 20px;
+}
+
+.image-slider {
+  margin: 0 auto;
+}
+
+.image-slide {
+  position: relative;
+}
+
+.image-slide img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.select-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button-container button {
+  margin-right: 10px;
+}
+
+.image-slide.selected img {
+  border: 4px solid transparent;
+  border-radius: 10px; /* Adjust the border radius as needed */
+}
+
+[data-color-mode="dark"] .image-slide.selected img {
+  border-color: #2c75ff; /* Set border color for dark mode */
+}
+
+[data-color-mode="light"] .image-slide.selected img {
+  border-color: #701192; /* Set border color for light mode */
+}
